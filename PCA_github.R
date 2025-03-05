@@ -30,7 +30,7 @@ for (i in 1:n_participants) {
   }
 }
 
-# Convert to dataframe and add Sex column
+# Convert to dataframe
 colnames(gene_data) <- paste0("Gene_", 1:n_genes)  # Name genes
 df <- data.frame(Sampe_ID = sample_id, Sex = sex, gene_data)  # Make the datframe
 
